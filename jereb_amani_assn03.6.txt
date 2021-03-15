@@ -1,0 +1,35 @@
+Query: None Query ID: lcl|Query_64417 Length: 303
+
+>Trebouxia aggregata strain SAG 219-1d NADH dehydrogenase subunit 4L (nad4L), NADH dehydrogenase subunit 6 (nad6), ATP synthase F0 subunit beta (atp4), cytochrome c oxidase subunit 3 (cox3), cytochrome c oxidase subunit 2 (cox2), and ATP synthase F0 subunit 8 (atp8) genes, complete cds; tRNA-Tyr (trnY(gua)) gene, complete sequence; ribosomal protein L16 (rpl16) gene, complete cds; tRNA-Val (trnV(uac)) and tRNA-Ser (trnS(uga)) genes, complete sequence; ribosomal protein S11 (rps11) and SecY-independant transporter protein (mttB) genes, complete cds; and tRNA-Leu (trnL(caa)) gene, complete sequence; mitochondrial
+Sequence ID: EU123946.1 Length: 26087 
+Range 1: 2551 to 2763
+
+Score:86.8 bits(183), Expect:3e-15, 
+Method:, 
+Identities:52/71(73%), Positives:58/71(81%), Gaps:0/71(0%)
+
+Query  91    MSMPIESMLLAvnsnflvfsvssDDMMGQSFASLVPTVAAAESAIGLAIFVITFRVRGTI  270
+             M M IE MLLAVN NFL+FSV  DD++GQ FA  V TVAAAESAIGLA+ VI +RVRGTI
+Sbjct  2763  MLMSIELMLLAVNLNFLLFSVYLDDLIGQLFALFVLTVAAAESAIGLALLVIYYRVRGTI  2584
+
+Query  271   AVEFINSIQG*  303
+             AVEFIN I+G*
+Sbjct  2583  AVEFINLIKG*  2551
+
+
+
+
+Range 2: 2552 to 2695
+
+Score:66.1 bits(138), Expect:5e-09, 
+Method:, 
+Identities:34/48(71%), Positives:36/48(75%), Gaps:0/48(0%)
+
+Query  302   *P*MLLINSTAIVPRTRKVITKMANPIADSAAATVGTNEAND*PIISS  159
+             *P + LINSTAIVPRTR  IT  A PIADSAAATV TN+A   PI SS
+Sbjct  2552  *PFIRLINSTAIVPRTR**ITSKAKPIADSAAATVSTNKAKSCPIRSS  2695
+
+
+
+
+
