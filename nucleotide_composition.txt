@@ -1,0 +1,6 @@
+Sequence length: 303
+Freq of A: 0.251
+Freq of C: 0.178
+Freq of G: 0.191
+Freq of T: 0.380
+G+C content: 0.370
