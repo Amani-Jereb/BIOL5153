@@ -1,0 +1,35 @@
+#!/bin/bash
+
+print('SBATCH -J Trinity-assembly') # job name
+print('#SBATCH --partition comp06') #
+print('#SBATCH -o Trinity_%j.txt') #
+print('#SBATCH -e Trinity_%j.err') #
+print('#SBATCH --mail-type=ALL') #
+print('#SBATCH --mail-user=ahjereb@uark.edu ') #
+print('#SBATCH --nodes=1') # number of nodes
+print('#SBATCH --ntasks-per-node=32') # number of processors
+print('#SBATCH --time=06:00:00') # walltime
+
+
+export OMP_NUM_THREADS=32
+# load required modules
+print('module load samtools')
+print('module load jellyfish')
+print('module load bowtie2')
+print('module load salmon/0.8.2')
+print('module load java')
+
+# cd into the directory where you're submitting this script from
+print('cd $SLURM_SUBMIT_DIR')
+
+# copy files from storage to scratch
+
+
+# cd onto the scratch disk to run the job
+print('cd /scratch/$SLURM_JOB_ID/')
+
+# run the Trinity assembly
+print('/share/apps/bioinformatics/trinity/trinityrnaseq-v2.11.0/Trinity --seqType fq --left RNA-R1.fastq.gz --right RNA-R2.fastq.gz --CPU 48 --max_memory 250G --trimmomatic --no_normalize_reads --full_cleanup --output trinity_Run2')
+ 
+# copy output files back to storage
+print('rsync -av trinity_Run2 $SLURM_SUBMIT_DIR')

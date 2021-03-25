@@ -6,8 +6,8 @@
 print('#PBS -N test') # job name
 print('#PBS -q tiny12core') # queue
 print('#PBS -j oe') # prefix for the output file, which should match the job name
-print('#PBS -o ahjereb.$PBS_JOBID') # number of nodes
-print('#PBS -l nodes=1:ppn=1') # number of processors
+print('#PBS -o nodes=1:ppn=1') # number of processors
+print('#PBS -l nodes=1') # number of nodes
 print('#PBS -l walltime=1:00:00') # walltime
 print()
 
